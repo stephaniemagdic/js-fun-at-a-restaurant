@@ -2,14 +2,12 @@ function nameMenuItem(name) {
   return menuItemName = "Delicious " + name;
 }
 
-function createMenuItem(name, price, type) {
-  var menuItem = {
-    name: name,
-    price: price,
-    type: type
+function createMenuItem(inputName, inputPrice, inputType) {
+  return {
+    name: inputName,
+    price: inputPrice,
+    type: inputType
   };
-
-  return menuItem;
 }
 
 function addIngredients(ingredient, ingredientsList) {

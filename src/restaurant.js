@@ -21,7 +21,6 @@ function addMenuItem(restaurant, newMenuItem) {
 
 function removeMenuItem(restaurant, menuItemName, menuType) {
   var chosenMenuArray = restaurant.menus[menuType.toString()];
-  var itemIndex = chosenMenuArray.indexOf(menuItemName.toString());
   for(i = 0; i < chosenMenuArray.length; i ++) {
     if (chosenMenuArray[i].name === menuItemName) {
       chosenMenuArray.splice(i, 1)
